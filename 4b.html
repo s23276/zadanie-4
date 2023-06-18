@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dodawanie akapitu</title>
+  <script>
+    function addParagraph() {
+      var inputText = document.getElementById('inputText').value;
+      var paragraph = document.createElement('p');
+      var textNode = document.createTextNode(inputText);
+      paragraph.appendChild(textNode);
+      
+      document.getElementById('output').appendChild(paragraph);
+    }
+  </script>
+</head>
+<body>
+  <h2>Dodawanie akapitu</h2>
+  <input type="text" id="inputText">
+  <button type="button" onclick="addParagraph()">Dodaj akapit</button>
+  
+  <div id="output"></div>
+</body>
+</html>
